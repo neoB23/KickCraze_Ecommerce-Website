@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: #f5f5f5;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.nav {
+    /* position: fixed; */
+    padding: 6vh;
+    height: 4vh;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    background: url("Retro\ Vintage\ Sneakers\ and\ Shoes\ Store\ Logo.png") no-repeat 5vw/10vh;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+.nav a, .nav li {
+    color: black;
+    padding: 0 1.5rem;
+    text-decoration: none;
+}
+
+.nav-bottom {
+    /* position: fixed; */
+    background-color: #1e1e1e;
+    padding: 1.5vh;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.nav-bottom ul {
+    display: flex;
+    list-style: none;
+}
+.nav-bottom a, .nav-bottom li {
+    transition: transform;
+    color: rgb(255, 255, 255);
+    padding: 0 1.5rem;
+    text-decoration: none;
+}
+.img{
+    padding:4vh;
+    display: flex;
+    justify-content: center;
+}
+.header{
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+button {
+    width: 20%;
+    max-width: 150px; 
+    height: auto;
+    padding: 1em 1em;
+    border-radius: 18px;
+    color: white;
+    background-color: rgb(15, 15, 15);
+    text-align: center;
+    border-style: none;
+    transition: background-color 0.3s, color 0.3s; 
+    cursor: pointer;
+}
+button:hover {
+    color: rgb(15, 15, 15);
+    background-color: #ffffff;
+}
