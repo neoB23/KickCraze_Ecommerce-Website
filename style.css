@@ -78,3 +78,40 @@ button:hover {
     color: rgb(15, 15, 15);
     background-color: #ffffff;
 }
+.img-preview {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    columns: row;
+}
+
+.img-preview img {
+    width: 200%;
+    max-width: 600px; 
+    height: auto; 
+    object-fit: cover; 
+    
+}
+.collection{
+        justify-content: center;
+        text-align: left;
+        position: relative;
+}
+.button-slider{
+    justify-content: center;
+        text-align: right;
+        position: relative;
+}
+.types-shoes{
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.headers{
+    padding-top: 10px;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
