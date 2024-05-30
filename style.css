@@ -103,15 +103,34 @@ button:hover {
         text-align: right;
         position: relative;
 }
-.types-shoes{
-    justify-content: center;
-    text-align: center;
+.types-shoes {
     position: relative;
+    max-width: 1200px; /* Adjust as necessary */
+    margin: auto;
+    overflow: hidden;
 }
-.headers{
-    padding-top: 10px;
-    justify-content: center;
-    text-align: center;
+
+.slider {
     position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 33.33%; /* Show three slides at a time */
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+
 
