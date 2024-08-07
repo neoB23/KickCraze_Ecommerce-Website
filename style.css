@@ -13,13 +13,12 @@ html {
 }
 
 .nav {
-    /* position: fixed; */
     padding: 6vh;
     height: 4vh;
     display: flex;
     justify-content: flex-end;
     text-align: center;
-    background: url("Retro\ Vintage\ Sneakers\ and\ Shoes\ Store\ Logo.png") no-repeat 5vw/10vh;
+    background: url("Retro Vintage Sneakers and Shoes Store Logo.png") no-repeat 5vw/10vh;
 }
 
 .nav ul {
@@ -33,7 +32,6 @@ html {
 }
 
 .nav-bottom {
-    /* position: fixed; */
     background-color: #1e1e1e;
     padding: 1.5vh;
     height: 5vh;
@@ -50,6 +48,29 @@ html {
     color: rgb(255, 255, 255);
     padding: 0 1.5rem;
     text-decoration: none;
+    position: relative; /* Needed for dropdown positioning */
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 1rem; /* Adjust as necessary */
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+     transition-delay: 0.1s; /* Adjust delay time as needed */
 }
 .img{
     padding:4vh;
@@ -79,58 +100,96 @@ button:hover {
     background-color: #ffffff;
 }
 .img-preview {
+    
     padding-top: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     columns: row;
 }
-
+.text-preview{
+    padding:20px;
+    background-color: #1e1e1e;
+    color: white;
+    width:36vw;
+}
+.shop-now{
+    background:white;
+    color:#1e1e1e;
+    border-radius: 0;
+    font-weight: bold;
+}
 .img-preview img {
     width: 200%;
     max-width: 600px; 
     height: auto; 
     object-fit: cover; 
-    
 }
-.collection{
-        justify-content: center;
-        text-align: left;
-        position: relative;
-}
-.button-slider{
+.collection {
+    padding-top: 3rem;
     justify-content: center;
-        text-align: right;
-        position: relative;
+    text-align: left;
+    position: relative;
+}
+.p {
+    justify-content: flex-start;
+    display: flex;
+    margin-left: 5rem;
+    font-size: 10px;
+}
+.button-slider {
+    justify-content: center;
+    text-align: right;
+    position: relative;
 }
 .types-shoes {
     position: relative;
-    max-width: 1200px; /* Adjust as necessary */
+    max-width: 90rem; /* Adjust as necessary */
     margin: auto;
     overflow: hidden;
 }
-
 .slider {
     position: relative;
     display: flex;
     width: 100%;
     height: 100%;
 }
-
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
-
 .slide {
     min-width: 33.33%; /* Show three slides at a time */
     box-sizing: border-box;
 }
-
 .slide img {
     width: 100%;
     height: auto;
 }
-
-
-
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1e1e1e;
+    padding: 2rem 0;
+    color: white;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.footer-column h1 {
+    margin-bottom: 0.5rem;
+}
+.footer-column p {
+    margin-bottom: 1rem;
+}
