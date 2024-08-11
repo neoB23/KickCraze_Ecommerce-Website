@@ -12,6 +12,7 @@ function App() {
     <> 
     <Nav/>
     <SubNav/>
+    <Hero/>
     {/* <Footer/> */}
     </>
     
