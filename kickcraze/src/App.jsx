@@ -4,21 +4,24 @@ import Nav from './components/Nav'
 import Hero from './components/Hero'
 import SubNav from './components/SubNav'
 import Footer from './components/Footer'
+import Login from './components/subcomponents/login';
 import './index.css';
 
 
 function App() {
   return (
     <Router> 
-      <Nav/>
-      <SubNav/>
-      <Hero/>
         <Routes> 
-          <Route parth="/" element={<Hero/>}/>
-          <Route parth="/" element={<Hero/>}/>
-          <Route parth="/" element={<Hero/>}/>
+          <Route path="/" element={
+            <> 
+            <Nav/>
+            <SubNav/>
+            <Hero/>
+            <Footer/>
+            </>
+            }/>
+          <Route path="/Login" element={<Login/>}/>
       </Routes>
-    <Footer/>
     </Router> 
     
   )
