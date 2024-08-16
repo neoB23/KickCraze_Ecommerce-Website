@@ -9,12 +9,17 @@ import './index.css';
 
 function App() {
   return (
-    <> 
-    <Nav/>
-    <SubNav/>
-    <Hero/>
-    {/* <Footer/> */}
-    </>
+    <Router> 
+      <Nav/>
+      <SubNav/>
+      <Hero/>
+        <Routes> 
+          <Route parth="/" element={<Hero/>}/>
+          <Route parth="/" element={<Hero/>}/>
+          <Route parth="/" element={<Hero/>}/>
+      </Routes>
+    <Footer/>
+    </Router> 
     
   )
 }
