@@ -57,19 +57,6 @@ function Hero() {
                     <img src="images/nr.webp" alt="new release" className="w-full sm:w-1/2 md:w-1/4 max-w-xs" />
                 </div>
                 </div>
-                <div className="mt-4">
-                    <h1 className="font-extrabold text-3xl text-left"> Latest Release</h1>
-                    <div className="flex justify-end mr-4">
-                        <button className="p-2 bg-zinc-900 text-white rounded-full w-12 h-12">a</button>
-                        <button className="p-2 bg-zinc-900 text-white rounded-full w-12 h-12
-                        ">b</button>
-                    </div>
-                    <div className="justify-center items-center flex flex-wrap gap-4">
-                        <img src="images/s1.webp" alt="shoes" className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 h-auto" />
-                        <img src="images/s2.webp" alt="shoes" className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 h-auto" />
-                        <img src="images/s3.webp" alt="shoes" className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 h-auto" />
-                    </div>
-                </div>
             </div>
         </div>
     );
